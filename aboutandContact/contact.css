@@ -1,0 +1,195 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+header {
+  padding: 7px 20px;
+  background: white;
+  border-bottom: 2px solid brown;
+  font-weight: 600;
+  font-size: 1.5vw;
+}
+header ul {
+  gap: 9px;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+header ul li img {
+  width: 50px;
+}
+@media screen and (max-width: 650px) {
+  header {
+    font-size: 3vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  header ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    font-size: 4vw;
+  }
+}
+section {
+  margin: 5vw;
+  padding: 2vw 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 9px;
+  background: silver;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+section h1 {
+  font-size: 30px;
+  margin-bottom: 5px;
+  border-bottom: 2px solid black;
+}
+section p {
+  font-size: 20px;
+  padding: 3px;
+  margin: 3px;
+  color: rgb(132, 4, 85);
+}
+section div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section div h1 {
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  margin: 5px;
+}
+section div h2 {
+  margin-top: 17px;
+  color: rgb(242, 12, 127);
+}
+section div p {
+  color: rgb(126, 24, 24);
+  margin: 7px;
+}
+section div button {
+  text-align: center;
+  padding: 5px 9px;
+  font-size: 20px;
+  border-radius: 5px;
+  margin-top: 9px;
+}
+section div button:hover {
+  background: black;
+  color: rgb(239, 25, 61);
+  padding: 6px 10px;
+  font-size: 21px;
+}
+footer {
+  background: black;
+  color: pink;
+  text-align: center;
+  font-size: 0.8vw;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+  padding: 5px 0px;
+  bottom: 0px;
+  position: absolute;
+  width: 100%;
+}
+@media screen and (max-width: 750px) {
+  section {
+    margin: 1vw;
+    padding: 2vw;
+  }
+  footer {
+    font-size: 1.7vw;
+  }
+}
+input {
+  padding: 5px 9px;
+  font-size: 17px;
+  border-radius: 7px;
+}
+textarea {
+  padding: 7px;
+  font-size: 17px;
+}
+@media screen and (max-width: 500px) {
+  textarea {
+    columns: 10;
+  }
+}
+.btn {
+  text-align: center;
+  padding: 5px 9px;
+  font-size: 20px;
+  background: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-top: 9px;
+}
+.btn:hover {
+  background: black;
+  color: rgb(239, 25, 61);
+  padding: 6px 10px;
+  font-size: 21px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+#snackbar {
+    visibility: hidden; 
+    min-width: 250px; 
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #333; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 90px; /* 30px from the bottom */
+  }
+  
+  /* Show the snackbar when clicking on a button (class added with JavaScript) */
+  #snackbar.show {
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  /* Animations to fade the snackbar in and out */
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 90px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 90px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 90px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 90px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }

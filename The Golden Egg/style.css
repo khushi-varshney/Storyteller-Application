@@ -1,0 +1,274 @@
+*{
+    padding :0px;
+    margin: 0px;
+}
+header{
+    padding: 3px 20px;
+    background: white;
+    border-bottom: 2px solid brown;
+    font-weight: 600;
+    font-size: 1.5vw;
+}
+header ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+header ul li img{
+    width:50px;
+}
+@media screen and (max-width:650px) {
+    header{
+        font-size: 3vw;
+    }
+}
+@media screen and (max-width:400px) {
+    header ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:7px;
+        font-size: 4vw;
+    }
+}
+section{
+    width:10vw;
+    height:50vh;
+    position: relative;
+}
+
+.oldMan{
+    position: absolute;
+    top:280px;
+    left:700px;
+    width:140px;
+}
+.backgroundIMG{
+    object-fit: fill;
+    width:100vw;
+    height: 93.2vh;
+}
+.dialogBox{
+    position: absolute;
+    left: 780px;
+    top:200px;
+    width: 100px;
+    background: white;
+    height:100px;
+    border-radius: 50%;
+}
+.dialogText{
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    position: absolute;
+    left:810px;
+    top:212px;
+    width:60px;
+}
+.richMan{
+    position: absolute;
+    width:170px;
+    height: 157px;
+    top:300px;
+    left:800px;
+    animation : manMoving 3s linear 0s 1
+}
+.dialogBox1{
+    position: absolute;
+    left: 899px;
+    top:140px;
+    width: 150px;
+    background: white;
+    height:150px;
+    border-radius: 50%;
+}
+.dialogText1{
+    font-size: 19px;
+    font-weight: 400;
+    color:black;
+    width: 110px;
+    position: absolute;
+    left:925px;
+    top:171px;
+}
+.chicken{
+    position: absolute;
+    left: 740px;
+    top:400px;
+    width:100px;
+}
+.goldenEgg{
+    position: absolute;
+    left:630px;
+    top:440px;
+    animation: eggMoving 1s ease-in 0s 1;
+    width:100px;
+}
+@keyframes eggMoving{
+    0%{
+        left:690px;
+        top: 430px;
+    }
+    100%{
+        left:630px;
+        top:440px;
+        transform: scale(0.5);
+    }
+}
+@keyframes manMoving {
+    0%{
+        left:1300px;
+    }
+    100%{
+        left:810px;
+    }
+}
+.OldMan{
+    position: absolute;
+    top:300px;
+    left:800px;
+    width:160px;
+    animation: OldManMoving 3s linear 0s 1;
+}
+@keyframes OldManMoving {
+    0%{
+        left:1000px;
+    }
+    100%{
+        left:800px;
+    }
+}
+
+.knife{
+    position: absolute;
+    left:750px;
+    top:500px;
+    width: 100px;
+    animation: knifeMoving 1s linear 0s 1;
+}
+@keyframes knifeMoving {
+    0%{
+        left:753px;
+        top: 300px;
+    }
+    100%{
+        left:750px;
+        top:500px;
+    }
+}
+
+.chickenGotCut{
+    position: absolute;
+    width:100px;
+    left:740px;
+    top:400px;
+    transform: rotate(90deg);
+    animation: chickenInHalf 1s ease-in-out 0s 1;
+}
+@keyframes chickenInHalf {
+    100%{
+        transform: rotate(90deg);
+    }
+}
+.chickenBlood{
+    width:200px;
+    top:410px;
+    left:640px;
+    position: absolute;
+    transform: rotate(-90deg)
+}
+.tears{
+    width:100px;
+    top:320px;
+    left:719px;
+    position: absolute;
+}
+.moral{
+    position: absolute;
+    text-align: center;
+    left:480px;
+    padding: 30px 10px;
+    border-radius: 5px;
+    border: 2px solid palevioletred;
+    top:160px;
+    width: 600px;
+    height: 300px;
+    background: peru;
+    transform: scale(1);
+}
+.moral h1{
+    font-size: 30px;
+    text-decoration: underline;
+    padding: 3px;
+}
+.moral h3{
+    font-size: 26px;
+    color: rgb(43, 17, 68);
+    padding: 17px 0px;
+}
+.moral h5{
+    font-size: 23px;
+    color:white;
+    padding: 9px 0px;
+}
+.moral p{
+    font-size: 20px;
+    color: rgb(7, 51, 31);
+    padding: 13px 0px;
+    font-weight: 500;
+    margin:13px 13px;
+}
+.moral h6{
+    font-size: 27px;
+    color: rgb(120, 14, 58);
+    padding: 9px 0px;
+}
+.playbutton{
+    position: absolute;
+    top:9px;
+    left:13px;
+    border:1px solid black;
+    border-radius: 5px;
+    animation: micScale 1s ease-in 3;
+}
+@keyframes micScale {
+    100%{
+        transform: scale(1.5);
+    }
+}
+.description{
+    position: absolute;
+    text-align: center;
+    left:480px;
+    padding: 30px 10px;
+    border-radius: 5px;
+    border: 2px solid palevioletred;
+    top:160px;
+    width: 600px;
+    height: 300px;
+    background: rgb(224, 195, 166);
+    transform: scale(1);
+}
+#snackbar{
+    position:absolute;
+    top:10px;
+    left:57px;
+    visibility: hidden;
+    width: 250px;
+    font-size: 23px;
+    color: red;
+    font-weight: 600;
+    animation: playIt 1s ease-in 3;
+}
+@keyframes playIt {
+    20%{
+        visibility: visible;
+        font-size: 27px;
+    }
+    100%{
+        visibility: hidden;
+    }
+}

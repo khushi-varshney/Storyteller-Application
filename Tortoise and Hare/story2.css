@@ -1,0 +1,307 @@
+*{
+    padding :0px;
+    margin: 0px;
+}
+header{
+    padding: 3px 20px;
+    background: white;
+    border-bottom: 2px solid brown;
+    font-weight: 600;
+    font-size: 1.5vw;
+}
+header ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+header ul li img{
+    width:50px;
+}
+@media screen and (max-width:650px) {
+    header{
+        font-size: 3vw;
+    }
+}
+@media screen and (max-width:400px) {
+    header ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:7px;
+        font-size: 4vw;
+    }
+}
+section{
+    width:10vw;
+    height:50vh;
+    position: relative;
+}
+.backgroundIMG{
+    object-fit: fill;
+    width:100vw;
+    height: 93.2vh;
+}
+.tortoise{
+    position: absolute;
+    top:390px;
+    left:900px;
+    width:190px;
+}
+.rabbit{
+    position: absolute;
+    top:370px;
+    left:200px;
+    width:190px;
+}
+.dialogBox{
+    position: absolute;
+    left: 280px;
+    top:190px;
+    width: 250px;
+    background: white;
+    height:200px;
+    border-radius: 50%;
+}
+.dialogText{
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    position: absolute;
+    left:310px;
+    top:255px;
+    width:200px;
+}
+.dialogBox1{
+    position: absolute;
+    left: 930px;
+    top:250px;
+    width: 150px;
+    background: white;
+    height:150px;
+    border-radius: 50%;
+}
+.dialogText1{
+    font-size: 19px;
+    font-weight: 400;
+    color:black;
+    width: 110px;
+    position: absolute;
+    left:960px;
+    top:271px;
+}
+.rabbitAfter{
+    position: absolute;
+    top:330px;
+    left:100px;
+    width:190px;
+}
+.tortoiseAfter{
+    position: absolute;
+    top:490px;
+    left:100px;
+    width:190px;
+}
+.counting{
+    position: absolute;
+    top:100px;
+    left:700px;
+    width:190px;
+}
+.playbutton{
+    position: absolute;
+    top:17px;
+    left:30px;
+    background-color: antiquewhite;
+    border:1px solid black;
+    border-radius: 5px;
+    animation: micScale 1s ease-in 3;
+}
+@keyframes micScale {
+    100%{
+        transform: scale(1.5);
+    }
+}
+.tortoiseRunning{
+    animation: tortoiseRun 5s linear;
+}
+@keyframes tortoiseRun {
+    0%{
+        left:100px;
+    }
+    100%{
+        left:1300px;
+    }
+}
+.rabbitRunning{
+    animation: rabbitRun 2s linear;
+}
+@keyframes rabbitRun{
+    0%{
+        left:100px;
+    }
+    100%{
+        left:1300px;
+    }
+}
+.rabbitRuns{
+    animation: rabbitRunn 3s linear, rabbitRunnn 2s linear 3s;
+}
+@keyframes rabbitRunn{
+    0%{
+        left:0px;
+    }
+    100%{
+        left:1300px;
+    }
+}
+@keyframes rabbitRunnn{
+    0%{
+        left:0px;
+    }
+    100%{
+        left:600px;
+    }
+}
+.rabbitStil{
+    position: absolute;
+    top:330px;
+    left:600px;
+    width:190px;
+}
+.dialogBox3{
+    position: absolute;
+    left: 650px;
+    top:170px;
+    width: 150px;
+    background: white;
+    height:150px;
+    border-radius: 50%;
+}
+.dialogText3{
+    font-size: 19px;
+    font-weight: 400;
+    color:black;
+    width: 110px;
+    position: absolute;
+    left:675px;
+    top:199px;
+}
+.sleepingzzz{
+    position: absolute;
+    top:250px;
+    left:570px;
+    width:190px;
+}
+.tortoiseWalk{
+    animation: tortoiseWalking 7s linear 2;
+}
+@keyframes tortoiseWalking {
+    0%{
+        left:0px;
+    }
+    100%{
+        left:1300px;
+    }
+}
+.finishLine{
+    position: absolute;
+    top:468px;
+    left:1200px;
+    width:300px;
+    border-radius: 10%;
+    transform: rotate(90deg);
+}
+.finish{
+    position: absolute;
+    top:217px;
+    left:1200px;
+    width:190px;
+}
+.tortoiseWin{
+    position: absolute;
+    top:490px;
+    left:1200px;
+    width:190px;
+}
+.celebration{
+    position: absolute;
+    top:90px;
+    left:1100px;
+    width:300px;
+}
+.winner{
+    position: absolute;
+    top:90px;
+    left:540px;
+    width:400px;
+    border-radius: 10%;
+    animation: wins 1s ease-out 6;
+}
+@keyframes wins {
+    0%{
+        top:80px;
+    }
+}
+.moral{
+    position: absolute;
+    text-align: center;
+    left:480px;
+    padding: 30px 10px;
+    border-radius: 5px;
+    border: 2px solid palevioletred;
+    top:160px;
+    width: 610px;
+    height: 310px;
+    background: peru;
+    transform: scale(1);
+}
+.moral h1{
+    font-size: 30px;
+    text-decoration: underline;
+    padding: 3px;
+}
+.moral h3{
+    font-size: 26px;
+    color: rgb(43, 17, 68);
+    padding: 17px 0px;
+}
+.moral h5{
+    font-size: 23px;
+    color:white;
+    padding: 9px 0px;
+}
+.moral p{
+    font-size: 21px;
+    color: rgb(7, 51, 31);
+    padding: 13px 0px;
+    font-weight: 500;
+    margin:13px 13px;
+}
+.moral h6{
+    font-size: 27px;
+    color: rgb(120, 14, 58);
+    padding: 9px 0px;
+}
+#snackbar{
+    position:absolute;
+    top:15px;
+    left:77px;
+    visibility: hidden;
+    width: 170px;
+    font-size: 23px;
+    color: rgb(36, 35, 35);
+    border-bottom: 2px solid black;
+    font-weight: 700;
+    animation: playIt 1s ease-in 3;
+}
+@keyframes playIt {
+    20%{
+        visibility: visible;
+        font-size: 27px;
+    }
+    100%{
+        visibility: hidden;
+    }
+}

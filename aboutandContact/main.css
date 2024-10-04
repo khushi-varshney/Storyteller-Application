@@ -1,0 +1,153 @@
+*{
+    padding :0px;
+    margin: 0px;
+}
+header{
+    padding: 3px 20px;
+    background: white;
+    border-bottom: 2px solid brown;
+    font-weight: 600;
+    font-size: 1.5vw;
+}
+header ul{
+    display: flex;
+    list-style: none;
+    gap:10px;
+    justify-content: space-between;
+    align-items: center;
+}
+header ul li img{
+    width:50px;
+}
+@media screen and (max-width:650px) {
+    header{
+        font-size: 3vw;
+    }
+}
+@media screen and (max-width:600px) {
+    header ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:7px;
+        font-size: 4vw;
+    }
+}
+@media screen and (max-width:650px) {
+    header{
+        font-size: 3vw;
+    }
+}
+@media screen and (max-width:400px) {
+    header ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:7px;
+        font-size: 4vw;
+    }
+}
+section{
+    display: flex;
+    flex-direction: row;
+    background: cornsilk;
+    align-items: center;
+    padding: 60px 0px;
+    justify-content: space-around;
+}
+.stories{
+    width: 33vw;
+    border-radius: 1vw;
+    border: 2px solid black;
+    height: 27rem;
+}
+.stories:hover{
+    width:33.5vw;
+    height: 25.5vw;
+}
+section div p{
+    text-align: center;
+    padding: 13px 0px;
+    font-size: 3vw;
+    text-decoration: underline;
+}
+@media screen and (max-width:537px) {
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:33px;
+    }
+    .stories{
+        width: 57vw;
+    }
+    section div p{
+        font-size: 7vw;
+    }
+}
+section div p:hover{
+    color: red;
+
+}
+.first{
+    background: rgb(54, 52, 52);
+    color: palevioletred;
+    display: grid;
+    gap:3rem;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem 5vw;
+}
+@media screen and (max-width:713px) {
+    .first{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:13px;
+    }
+    .right{
+        border-top: 1px solid white;
+        padding-top: 10px;
+    }
+}
+.left div{
+    display: flex;
+    font-size: larger;
+    gap:13px;
+    align-items: center;
+}
+.left a{
+    text-decoration: none;
+    padding: 3px 9px;
+    background-color: black;
+    color: white;
+    border: 2px solid rgb(133, 31, 31);
+    font-size: larger;
+}
+.buttons{
+    padding: 13px 0px 0px 0px;
+}
+.left a:hover{
+    padding: 3px 9px;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    border: 2px solid pink;
+}
+.right{
+    padding: 20px 0px 0px 0px;
+}
+.right p{
+    padding: 15px 0px;
+    font-size: larger;
+}
+.bottom{
+    text-align: center;
+    font-size: x-large;
+    padding: 10px 0px;
+    background-color: black;
+    color:pink;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      sizes="30px"
+      href="https://png.pngtree.com/png-vector/20220520/ourmid/pngtree-storytelling-handwritten-lettering-with-png-image_4623547.png"
+    />
+    <link rel="stylesheet" href="contact.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <header>
+      <ul>
+        <li
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 11px;
+            color: green;
+          "
+        >
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuaEjSnuETp-kXq0tHfeF_gnQy34fp7zM-QQyBtfAsyl6g8qMgwn4ir-tFHV1BfbVbc3A&usqp=CAU"
+          /><a href="index.html" style="font-size: 29px; text-decoration: none"
+            >Storyweave</a
+          >
+        </li>
+        <li>
+          <a
+            href="about.html"
+            style="
+              border: none;
+              color: lightcoral;
+              background: white;
+              font-weight: 900;
+              font-size: 23px;
+              text-decoration: none;
+            "
+            >Immerse Yourself In The Narrative</a
+          >
+        </li>
+      </ul>
+    </header>
+    <section>
+      <div>
+        <h1>Contact</h1>
+        <form onsubmit="submitFormReturn();return false;">
+          <p>
+            Name : &nbsp; * &nbsp;<input
+              type="text"
+              placeholder="Enter Your Full Name"
+              class="userName" required
+            />
+          </p>
+          <p>
+            E-Mail : &nbsp; * &nbsp;<input
+              type="email"
+              placeholder="example@gmail.com"
+              class="userEmail" required
+            />
+          </p>
+          <p>
+            Phone : &nbsp; * &nbsp;<input
+              type="number"
+              placeholder="Your Phone-Number"
+              class="userPhone" required
+            />
+          </p>
+          <textarea
+            rows="9"
+            cols="33"
+            placeholder="Wants to provide a story or Have any query"
+            class="message"
+          ></textarea>
+          <br />
+          <div style="display: flex; flex-direction: row; gap: 1vw">
+            <button class="submitButton btn" onsubmit="submitFormReturn();return false;">Submit</button>
+            <p>OR</p>
+            <a class="btn" href="about.html" style="text-decoration: none;">Go Back</a>
+          </div>
+        </form>
+        <div id="snackbar">Submit Successfully</div>
+      </div>
+    </section>
+    <footer>
+      <h1>Copyright &copy; 2024 STORYWEAVE. All Right Reserved.</h1>
+    </footer>
+    <script src="contact.js"></script>
+  </body>
+</html>

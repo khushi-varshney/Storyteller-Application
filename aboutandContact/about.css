@@ -1,0 +1,141 @@
+*{
+    padding :0px;
+    margin: 0px;
+}
+header{
+    padding: 7px 20px;
+    background: white;
+    border-bottom: 2px solid brown;
+    font-weight: 600;
+    font-size: 1.5vw;
+}
+header ul{
+    gap:9px;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+header ul li img{
+    width:50px;
+}
+@media screen and (max-width:650px) {
+    header{
+        font-size: 3vw;
+    }
+}
+@media screen and (max-width:600px) {
+    header ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:13px;
+        font-size: 4vw;
+    }
+}
+section{
+    margin: 7vw;
+    padding: 2vw 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:9px;
+    background: silver;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+section h1{
+    font-size: 30px;
+    margin-bottom: 5px;
+    border-bottom: 2px solid black;
+}
+section p{
+    font-size: 20px;
+    padding: 3px;
+    margin: 3px;
+    color: rgb(132, 4, 85);
+}
+section div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section div h1{
+    width:100%;
+    padding:5px;
+    text-align: center;
+    margin: 5px;
+}
+section div h2{
+    margin-top: 17px;
+    color: rgb(242, 12, 127);
+}
+section div p{
+    color: rgb(126, 24, 24);
+    margin:7px;
+}
+section div button{
+    text-align: center;
+    padding: 5px 9px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top:9px;
+}
+section div button:hover{
+    background: black;
+    color: rgb(239, 25, 61);
+    padding: 6px 10px;
+    font-size:21px;
+}
+footer{
+    background: black;
+    color: pink;
+    text-align: center;
+    font-size: 0.8vw;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    padding: 5px 0px;
+    bottom: 0px;
+    position: absolute;
+    width:100%;
+}
+@media screen and (max-width: 750px) {
+    section{
+        margin: 4vw;
+    }
+    footer{
+        font-size: 1.7vw;
+    }
+}
+input{
+    padding: 5px 9px;
+    font-size: 17px;
+    border-radius: 7px;
+}
+textarea{
+    padding:7px;
+    font-size:17px;
+}
+@media screen and (max-width:500px) {
+    textarea{
+        columns: 10;
+    }
+}
+.btn{
+    text-align: center;
+    padding: 5px 9px;
+    font-size: 20px;
+    background: white;
+    border: 2px solid pink;
+    border-radius: 5px;
+    margin-top:9px;
+}
+.btn:hover{
+    background: black;
+    color: rgb(239, 25, 61);
+    padding: 6px 10px;
+    font-size:21px;
+}
