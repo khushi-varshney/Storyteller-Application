@@ -102,8 +102,8 @@ footer {
   word-spacing: 3px;
   letter-spacing: 1px;
   padding: 5px 0px;
-  bottom: 0px;
-  position: absolute;
+  /* bottom: 0px;
+  position: absolute; */
   width: 100%;
 }
 @media screen and (max-width:399px){
