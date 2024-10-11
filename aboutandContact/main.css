@@ -63,10 +63,6 @@ section{
     border: 2px solid black;
     height: 27rem;
 }
-.stories:hover{
-    width:33.5vw;
-    height: 25.5vw;
-}
 section div p{
     text-align: center;
     padding: 13px 0px;
